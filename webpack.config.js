@@ -19,7 +19,7 @@ var bannerPlugin = new webpack.BannerPlugin(
 function getBaseConfig () {
   return {
     entry: {
-      app: path.resolve('./app.js')
+      'index': path.resolve('src', 'app.js')
     },
     output: {
       path: 'dist',
