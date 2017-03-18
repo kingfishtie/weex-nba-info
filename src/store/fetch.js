@@ -19,8 +19,6 @@ export function fetch (path) {
 }
 
 export function fetchIndex (type) {
-
-    console.log('step3:' + type);
   return fetch(type);
 }
 

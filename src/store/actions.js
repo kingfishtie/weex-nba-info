@@ -10,7 +10,8 @@ export function FETCH_LIST_DATA ({ commit, dispatch, state }, { type }) {
     .then(() => dispatch('ENSURE_ACTIVE_ITEMS'))
 }
 export function FETCH_INDEX_DATA({ commit, dispatch, state }, { type }) {
-  return fetchIndex(type).then(ids => commit('SET_LIST', { type, ids }));
+  var data = fetchIndex(type).then(ids => commit('SET_LIST', { type, ids }));
+  return data;
 }
 
 // load more items
